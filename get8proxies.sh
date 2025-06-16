@@ -12,7 +12,6 @@ for i in $(seq 1 $MAX); do
     ZONE="asia-northeast1-a"
   fi
 
-  echo -n "$VM: "
   gcloud compute ssh "$VM" \
     --zone="$ZONE" \
     --command="sudo cat /root/proxy.txt" \

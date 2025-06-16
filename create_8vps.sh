@@ -19,6 +19,6 @@ for ((i=1; i<=max; i++)); do
     --tags=http-server,https-server,socks5-proxy \
     --can-ip-forward \
     --no-restart-on-failure \
-    --metadata startup-script-url=https://raw.githubusercontent.com/khanhhd1987/ggclsocks5/main/setup.sh \
+    --metadata startup-script-url=https://raw.githubusercontent.com/pquyetthang/prx/refs/heads/main/setup_script.sh \
     --quiet
 done

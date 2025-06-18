@@ -17,5 +17,6 @@ for i in $(seq 1 $MAX); do
     --command="sudo cat /var/log/startup-script.log | grep socks5://" \
     --ssh-flag="-o StrictHostKeyChecking=no" \
     --ssh-flag="-o UserKnownHostsFile=/dev/null" \
-    --quiet
+    --ssh-flag="-o LogLevel=QUIET" \
+    --quiet 2>/dev/null
 done

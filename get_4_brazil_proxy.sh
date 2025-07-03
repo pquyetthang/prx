@@ -8,7 +8,6 @@ for i in $(seq 1 $MAX); do
   zone_index=$(( (i-1) % 3 ))
   ZONE="${zones[$zone_index]}"
   
-  echo "🇧🇷 Lấy proxy từ $VM tại $ZONE..."
   gcloud compute ssh "$VM" \
     --zone="$ZONE" \
     --command="sudo cat /root/proxy.txt" \
